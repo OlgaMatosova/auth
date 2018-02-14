@@ -18,7 +18,6 @@ export class LoginRedirect implements CanActivate {
         }
 
         if (token) {
-            this.router.navigateByUrl('/admin/dashboard/promos');
             return false;
         }
         else {
